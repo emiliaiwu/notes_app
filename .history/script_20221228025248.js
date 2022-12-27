@@ -11,16 +11,16 @@ let i = 0;
 
 
 // ADD COLORS
-addColorBtn.addEventListener("click", () => {
-    noteColors.forEach((noteColor, i) => {
-        setTimeout(function () {
-            noteColor.style.transform = 'translate(0px)';
-            noteColor.style.display = 'block';
-        }, 80 * i);
+// addColorBtn.addEventListener("click", () => {
+//     noteColors.forEach((noteColor, i) => {
+//         setTimeout(function () {
+//             noteColor.style.transform = 'translate(0px)';
+//             noteColor.style.opacity = '1';
+//         }, 80 * i);
 
     
-    })
-});
+//     })
+// });
 
 
 // ADD NEW NOTE
@@ -43,6 +43,7 @@ const notes = JSON.parse(localStorage.getItem('notes'));
 if (notes) {
 	notes.forEach((note) => {
 		addNote(note);
+		addNewNote(note);
 		note.style.backgroundColor = color;
         
 	});
@@ -170,9 +171,12 @@ function addNote(text = ''){
 	});
 
 	i++;
-
+	console.log(note.id);
 }  
-        
+            // addNote();
+
+ 
+ 
 
 
 function updateLS() {

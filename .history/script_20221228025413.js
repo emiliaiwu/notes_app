@@ -15,7 +15,7 @@ addColorBtn.addEventListener("click", () => {
     noteColors.forEach((noteColor, i) => {
         setTimeout(function () {
             noteColor.style.transform = 'translate(0px)';
-            noteColor.style.display = 'block';
+            noteColor.style.opacity = '1';
         }, 80 * i);
 
     

@@ -48,7 +48,7 @@ h1 {
     margin-bottom: 1rem;
     cursor: pointer;
     transform: translateY(calc(var(--i) * -50px));
-    display: none;
+    d
     transition: all .3s ease;
 }
 
